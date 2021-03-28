@@ -1,0 +1,15 @@
+.userMessages{
+    display: flex;
+    font-size: 100%;
+    background: lavenderblush;
+    max-width: 100%;
+}
+.userMessages > * {
+    margin: 0px;
+    margin-left: 0.5vw;
+    color: red;
+}
+.message-container{
+    position: absolute;
+    bottom: true;
+}
