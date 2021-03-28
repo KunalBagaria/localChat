@@ -41,4 +41,4 @@ app.post('/message/', (req, res) => {
     res.send('Message sent successfully!')
 })
 
-app.listen(8000)
+app.listen(process.env.PORT)
