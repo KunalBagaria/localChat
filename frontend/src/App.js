@@ -10,7 +10,7 @@ const UserForm = props => {
   const [jsxMessages, setJsxMessages] = useState();
 
   useEffect(() => {
-    fetch('http://localhost:8000/messages')
+    fetch('/messages')
     .then(res => res.json())
     .then(json => {
       if (messages === json.messages) {
@@ -39,7 +39,7 @@ const UserForm = props => {
 
   const submit = e => {
     e.preventDefault()
-    fetch('http://localhost:8000/message/', {
+    fetch('/message/', {
       method: 'POST',
       body: JSON.stringify({ 
         message,
